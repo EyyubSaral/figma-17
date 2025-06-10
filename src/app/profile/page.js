@@ -39,10 +39,10 @@ const ProfilePage = () => {
         <div className="mb-6">
           <h1 className="font-bold text-lg mb-2">Settings</h1>
           <div className="space-y-2">
-            <p className="flex items-center space-x-2">
-              <User className="h-4 w-4 text-blue-400" />
+            <p className="flex items-center space-x-2 text-blue-400">
+              <User className="h-4 w-4 " />
               <Link href="/profile">
-                <span>Profile</span>
+                <span className="">Profile</span>
               </Link>
             </p>
             <p className="flex items-center space-x-2">
