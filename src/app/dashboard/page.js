@@ -12,8 +12,6 @@ import {
   Palette,
 } from "lucide-react";
 
-
-
 import CO2Chart from "../components/CO2Chart";
 import VOCChart from "../components/VOCChart";
 import PM25Chart from "../components/PM25Chart";
@@ -53,19 +51,27 @@ export default function Dashboard() {
           <div className="space-y-2">
             <p className="flex items-center space-x-2">
               <User className="h-4 w-4" />
-              <span>Profile</span>
+              <Link href="/profile">
+                <span>Profile</span>
+              </Link>
             </p>
             <p className="flex items-center space-x-2">
               <HelpCircle className="h-4 w-4" />
-              <span>FAQ's</span>
+              <Link href="/faq">
+                <span>FAQ's</span>
+              </Link>
             </p>
             <p className="flex items-center space-x-2">
               <Phone className="h-4 w-4" />
-              <span>Contact Us</span>
+              <Link href="/contact">
+                <span>Contact Us</span>
+              </Link>
             </p>
             <p className="flex items-center space-x-2 text-red-500">
               <LogOut className="h-4 w-4" />
-              <span>Log out</span>
+              <Link href="/login">
+                <span>Log out</span>
+              </Link>
             </p>
           </div>
         </div>
@@ -103,7 +109,9 @@ export default function Dashboard() {
               <Bell className="h-5 w-5 text-gray-700" />
             </button>
             <button className="p-2 bg-white rounded-full shadow">
-              <HelpCircle className="h-5 w-5 text-gray-700" />
+              <Link href="/faq">
+                <HelpCircle className="h-5 w-5 text-gray-700" />
+              </Link>
             </button>
           </div>
         </div>

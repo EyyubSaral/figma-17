@@ -43,19 +43,27 @@ export default function Mail() {
           <div className="space-y-2">
             <p className="flex items-center space-x-2">
               <User className="h-4 w-4" />
-              <span>Profile</span>
+              <Link href="/profile">
+                <span>Profile</span>
+              </Link>
             </p>
             <p className="flex items-center space-x-2">
               <HelpCircle className="h-4 w-4" />
-              <span>FAQ's</span>
+              <Link href="/faq">
+                <span>FAQ's</span>
+              </Link>
             </p>
             <p className="flex items-center space-x-2">
               <Phone className="h-4 w-4" />
-              <span>Contact Us</span>
+              <Link href="/contact">
+                <span>Contact Us</span>
+              </Link>
             </p>
             <p className="flex items-center space-x-2 text-red-500">
               <LogOut className="h-4 w-4" />
-              <span>Log out</span>
+              <Link href="/login">
+                <span>Log out</span>
+              </Link>
             </p>
           </div>
         </div>
@@ -77,7 +85,7 @@ export default function Mail() {
       {/* main */}
       <main className="flex-1 mr-7 mt-7 space-y-6">
         <div className="flex justify-between items-center mb-4">
-          <h1 className="text-2xl font-bold text-gray-800">Dashboard</h1>
+          <h1 className="text-2xl font-bold text-gray-800">Messages</h1>
           <div className="flex items-center space-x-4">
             <input
               type="text"
@@ -91,7 +99,9 @@ export default function Mail() {
               <Bell className="h-5 w-5 text-gray-700" />
             </button>
             <button className="p-2 bg-white rounded-full shadow">
+              <Link href="/faq"> 
               <HelpCircle className="h-5 w-5 text-gray-700" />
+              </Link>
             </button>
           </div>
         </div>
