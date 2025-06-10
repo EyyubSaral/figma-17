@@ -25,7 +25,9 @@ const ProfilePage = () => {
           <div className="space-y-2">
             <p className="flex items-center space-x-2 text-gray-700">
               <Home className="h-4 w-4" />
-              <span>Dashboard</span>
+              <Link href="/dashboard">
+                <span>Dashboard</span>
+              </Link>
             </p>
             <p className="flex items-center space-x-2 text-gray-700">
               <MessageCircle className="h-4 w-4" />

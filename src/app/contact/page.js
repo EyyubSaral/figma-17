@@ -25,7 +25,9 @@ const ContactPage = () => {
           <div className="space-y-2">
             <p className="flex items-center space-x-2 text-gray-700">
               <Home className="h-4 w-4" />
-              <span>Dashboard</span>
+              <Link href="/dashboard">
+                <span>Dashboard</span>
+              </Link>
             </p>
             <p className="flex items-center space-x-2 text-gray-700">
               <MessageCircle className="h-4 w-4" />
@@ -80,7 +82,7 @@ const ContactPage = () => {
           </button>
         </div>
       </nav>
-      
+
       {/* main */}
       <div className="flex-1 flex items-center justify-center p-10">
         <div className="bg-white rounded-2xl shadow-lg p-8 w-full max-w-2xl">
